@@ -78,6 +78,18 @@ CCJ pros:
 
 Yes, a Bitcoin address to provide fees can be hardcoded into every peer.
 
+## How CS++ mixing fees are decided upon?
+
+## Can dynamic information be shown and updated to the user in CS++? (Time waited for peers in the last round, Last round's anonymity set, Time elapsed from the start of the current round, Number of connected peers waiting for more to kick off the round.)
+
+## Does the paper describe techniques I may be able to use in CCJ?
+
+No. DM doesn't remove Tor dependency, just makes it less relevant.
+
+## Does CS++ with DM still need IP hiding? (If yes, can it be solved with Dandelion?)
+
+Yes it is ideal, but it is not crucial. Dandelion cannot be used for this, because the IP anonymity set would be the users of all peers, while DM already achives that. While Tor could extend the IP anonymity set to all Tor users.
+
 ## How long would the implementation take?
 
 Building DiceMix over Tor/I2P means is not an obvious task. The vast majority of libraries cannot handle Tor properly, let alone I2P, so it's possible building the communication would take up to half a year, since networking protocols must be implemented from scratch, which is quite a job. (Refer to my half finished [Tor Over TCP](https://github.com/nopara73/TorOverTcp) implementation.)

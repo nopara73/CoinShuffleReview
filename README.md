@@ -62,13 +62,13 @@ ZL is a framework that makes sure round based mixing techniques don't get deanon
 CS++ pros:
 - More decentralized, it may even be possible to be built in a fully decentralized way. Decentralization provides censorship resistance.
 - Better researched and has higher quality academic specification.
-- Its mixing don't rely on an external anonymity network, rather it presents its own: DM. It relies on an anonymity network only for IP masking, if this anonymity network fails or isn't implemented in the first place it's not a big problem.
+- Its mixing doesn't rely on an external anonymity network, rather it presents its own: DM. However it relies on an anonymity network, but only for IP masking, if this anonymity network fails or isn't implemented in the first place it's not a big deal.
 
 CCJ pros:
 - Faster, although it doesn't matter, because the most time will always be spent on to wait for peers.
 - Much simpler.
-- More interactive feedback can be provided to the user.
-- Easy to change, its implementation flaws rarely require upgrading every client, but only the coordinator.
+- More interactive feedback can be provided to the user directy pulled from the coordinator.
+- Easy to change, newly found implementation flaws rarely require upgrading the whole network, only the coordinator.
 
 # Notes
 

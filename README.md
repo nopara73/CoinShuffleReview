@@ -48,6 +48,8 @@ Right now all Bitcoin mixing technique are mixing in rounds with a common, pre-d
 In CCJ the server can easily build the transaction in an optimal way, but CS++ needs to come to decentralized consensus.
 
 ## Would replacing DM with Tor is possible and would it make it simpler?
+### Notes
+If solely relying on Tor/I2P is allowed it seems to me DM is unnecessary even from a performance point of view, since in order to hide IPs, the scheme should rely on Tor/I2P anyway, therefore DM's speed would not add much if anything. Eg. Tor identity change with new stream happens quite fast. Also I think multiple Tor addresses can be served by one machine, however at this point I'm not sure how likely a connection between them can be exposed or if it's necessary to CS++ in the first place.
 
 ## Can blind signatures improve upon CS++?
 
@@ -70,7 +72,19 @@ CCJ pros:
 - More interactive feedback can be provided to the user directy pulled from the coordinator.
 - Easy to change, newly found implementation flaws rarely require upgrading the whole network, only the coordinator.
 
-# Notes
+## Can CS++ wait for the desired anonymity set or it must run periodically?
+
+## Can CS++ implementors charge mixing fee?
+
+Yes, a Bitcoin address to provide fees can be hardcoded into every peer.
+
+## How long would the implementation take?
+
+Building DiceMix over Tor/I2P means is not an obvious task. The vast majority of libraries cannot handle Tor properly, let alone I2P, so it's possible building the communication would take up to half a year, since networking protocols must be implemented from scratch, which is quite a job. (Refer to my half finished [Tor Over TCP](https://github.com/nopara73/TorOverTcp) implementation.)
+
+Building CoinShuffle can take also up to a few months.
+
+However the main problem is everything must be built near perfectly the first time, because fixing bugs is quite hard, and requires the whole network to be upgraded. Of course we've seen already non-production ready implementations, like the authors proof of concept, ShufflePuff or CashShuffle, but a decentralized system cannot be built with the typical startup's minimal time to market mentality, because they are hard to fix later.
 
 ## Math
 

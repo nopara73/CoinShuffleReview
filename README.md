@@ -1,0 +1,2 @@
+# CoinShuffleReview
+Review of CoinShuffle++

@@ -21,3 +21,25 @@ The review is done in a Q&A format. My process of fully digesting the paper was 
 10. Skim the rest of the paper, read interesting parts and ask questions.
 11. Try to answer most questions.
 12. Send notes, answered and unanswered questions to the authors.
+
+# Questions
+
+# Notes
+
+## Math
+
+![](https://i.imgur.com/1iqvbmE.png)
+
+That's a fancy way to say it.
+
+## Banking Vs Crypto Anonymity
+
+![](https://i.imgur.com/ZNOadnW.png)
+
+It's often overlooked.
+
+## Anonymity Network Dependency
+
+![](https://i.imgur.com/7HdjVoy.png)
+
+Indeed, it's not insignificant if the IP anonymity set consists of real or Tor IPs. From an implementation point of view this opens a can of worms. Yet, I suspect the first version of this can get away with not using Tor.

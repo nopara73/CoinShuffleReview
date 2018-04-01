@@ -117,7 +117,7 @@ that no collisions occur, not even with a small probability.
 
 ## Is DM a P2P anonymity network and not a Bitcoin mixing technique? If yes, what's the Bitcoin mixing technique used?
 
-Yes, the mixing technique used is CS++.
+DM is a mixnet, the Bitcoin mixing technique used is CS++.
 
 ## Is Tor a mixnet?
 
@@ -126,6 +126,8 @@ No, Tor is a third party anonymity proxy.
 > Mix networks get their security from the mixing done by their component mixes, and may or may not use route unpredictability to enhance security. Onion routing networks primarily get their security from choosing routes that are difficult for the adversary to observe, which for designs deployed to date has meant choosing unpredictable routes through a network. And onion routers typically employ no mixing at all. This gets at the essence of the two even if it is a bit too quick on both sides. Mixes are also usually intended to resist an adversary that can observe all traffic everywhere and, in some threat models, to actively change traffic. Onion routing assumes that an adversary who observes both ends of a communication path will completely break the anonymity of its traffic. Thus, onion routing networks are designed to resist a local adversary, one that can only see a subset of the network and the traffic on it. - [Paul Syverson - Why I'm not an Entropist](https://www.freehaven.net/anonbib/cache/entropist.pdf)
 
 ## Does CS++ require bulletin board or is it optional?
+
+It can be substituted with a reliable broadcast protocol.
 
 ## What's the difference between Blindcoin and CCJ?
 

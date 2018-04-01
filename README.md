@@ -98,6 +98,40 @@ Building CoinShuffle can take also up to a few months.
 
 However the main problem is everything must be built near perfectly the first time, because fixing bugs is quite hard, and requires the whole network to be upgraded. Of course we've seen already non-production ready implementations, like the authors proof of concept, ShufflePuff or CashShuffle, but a decentralized system cannot be built with the typical startup's minimal time to market mentality, because they are hard to fix later.
 
+## What's the main contributions of the paper?
+
+DM and CS++.
+
+## What is slot collision (what DC-nets fail to address)?
+### Notes
+>  Most protocols fail to simultaneously address
+the crucial problems of slot collisions and disruption by malicious
+peers, while the remaining ones handle f malicious peers
+with O(f^2) communication rounds.
+
+> In this work we present DiceMix, a P2P mixing protocol
+based on DC-nets that enables participants to anonymously
+publish a set of messages ensuring sender anonymity and
+termination. DiceMix avoids slot reservation and still ensures
+that no collisions occur, not even with a small probability.
+
+## Is DM a P2P anonymity network and not a Bitcoin mixing technique? If yes, what's the Bitcoin mixing technique used?
+
+Yes, the mixing technique used is CS++.
+
+## Is Tor a mixnet?
+
+Yes.
+
+## Does CS++ require bulletin board or is it optional?
+
+## What's the difference between Blindcoin and CCJ?
+
+## Can proactive or reactive techniques make CCJ faster?
+![](https://i.imgur.com/taIODez.png)
+
+I don't see how, but even if they can, it doesn't matter, most time goes to wait for peers.
+
 ## Math
 
 ![](https://i.imgur.com/1iqvbmE.png)
